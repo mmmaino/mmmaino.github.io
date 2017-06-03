@@ -1,1 +1,67 @@
-Hello World
+<html><head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>Madi's Blog</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="author" content="Madi">
+  <link rel="stylesheet" type="text/css" href="css/splash.css">
+  
+      <!-- Google Font Import -->
+      <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div class="title">Madi's Blog<br></div>		
+     <div class="slogan">Because I don't have time to text all y'all</div>
+       <div class="topnav">
+         <a href="index.html">Home</a>
+         <a href="schedule.html">Schedule</a>
+         <a href="pictures.html">Pictures</a>
+         <a href="todolist.html">To Do List</a>
+         <a href="shoutouts.html">Shout Outs</a>
+       </div>
+    </div>
+  
+
+    <div class="slides">
+
+	<!-- Book of the Day -->
+	<br>
+	<div id="book-of-the-day">
+		<h3 id="botd"> Book of the Day </h3>
+		<script type="text/javascript">
+			//store the quotations in arrays
+			books = [];
+			authors = [];
+			books[0] = "Everville";
+			authors[0] = "Clive Barker";
+			books[1] = "Welcome to the Monkey House";
+			authors[1] = "Kurt Vonnegut";
+			books[2] = "A Random Walk Down Wall Street";
+			authors[2] = "Burton G. Malkiel";
+			books[3] = "The Coldest War";
+			authors[3] = "James Brady";
+			books[4] = "The Red Badge of Courage";
+			authors[4] = "Stephen Crane";
+
+			//calculate a random index number
+			index = Math.floor(Math.random() * books.length);
+
+			//display the book and author
+			document.write("<DL>\n");
+			document.write("<DT>" + "\"" + books[index] + "\"</DT>\n");
+			document.write("<DD>" + "by " + authors[index] + "</DT>\n");
+			document.write("</DL>\n");
+	
+			//done
+		</script><dl>
+<dt>"The Red Badge of Courage"</dt>
+<dd>by Stephen Crane
+</dd></dl>
+
+	</div>
+
+
+
+</div></body></html>
